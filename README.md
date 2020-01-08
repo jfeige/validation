@@ -6,9 +6,9 @@
 调用方式:
 
 	rules := make([]map[string]interface{},0)
-	rules = append(rules,map[string]interface{}{"field" : "name", "require" : true, "msg" : "姓名不能为空！",})
+	rules = append(rules,map[string]interface{}{"field" : "name", "required" : true, "msg" : "姓名不能为空！",})
 	rules = append(rules,map[string]interface{}{"field" : "name", "string" : true, "min" : 6, "max" : 12, "msg" :"姓名长度必须在6~12位之间",})
-	rules = append(rules,map[string]interface{}{"field" : "age", "require" : true, "msg" : "年龄不能为空",})
+	rules = append(rules,map[string]interface{}{"field" : "age", "required" : true, "msg" : "年龄不能为空",})
 	rules = append(rules,map[string]interface{}{"field" : "age", "int" : true, "min" : 18, "max" : 99, "msg" : "年龄必须在18~99岁之间",})
 	rules = append(rules,map[string]interface{}{"field" : "desc", "string" : true,"max":100,"msg":"个人说明长度必须在100个字符以内"})
 
